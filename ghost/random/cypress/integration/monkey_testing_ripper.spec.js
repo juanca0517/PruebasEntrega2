@@ -22,6 +22,7 @@ function randomTest(monkeysLeft) {
                     cy.wrap(randomLink).click({force: true});
                     monkeysLeft = monkeysLeft - 1;
                 }
+                cy.wait(2000);
                 randomTest(monkeysLeft);
           });
           break;
@@ -32,6 +33,7 @@ function randomTest(monkeysLeft) {
                   cy.wrap(randomButton).click({force: true});
                   monkeysLeft = monkeysLeft - 1;
               }
+              cy.wait(2000);
               randomTest(monkeysLeft);
           });
           break;

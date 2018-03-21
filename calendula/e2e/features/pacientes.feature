@@ -5,9 +5,9 @@ Feature: Patients
     Given I swipe left
     When I press "Pacientes"
     And I press "Usuario"
-    And I clear "Nombre"
-    And I enter text "NuevoUsuario" into field with id "Nombre"
-    And I press the "Add" button
+    And I clear "patient_name"
+    And I enter text "NuevoUsuario" into field with id "patient_name"
+    And I press the "add_button" button
     Then I should see "NuevoUsuario"
 
 
@@ -21,8 +21,8 @@ Feature: Patients
     Given I swipe left
     When I press "Pacientes"
     And I press "NuevoUsuario"
-    And I press view wiht id "edit"
-    And I press image button number 5
-    And I press the "Add" button
+    And I press view wiht id "avatar_chage"
+    And I press image button wiht id "imageView"
+    And I press the "add_button" button
     Then I should see "NuevoUsuario"
 

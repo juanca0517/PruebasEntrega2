@@ -5,9 +5,9 @@ Feature: Routines
     Given I swipe left
     When I press "Rutinas"
     And I press "+"
-    And I clear "Rutina"
-    And I enter text "NuevaRutina" into field with id "Rutina"
-    And I press the "Add" button
+    And I clear "routine_edit_name"
+    And I enter text "NuevaRutina" into field with id "routine_edit_name"
+    And I press the "add_button" button
     Then I should see "NuevaRutina"
 
 
@@ -21,7 +21,7 @@ Feature: Routines
     Given I swipe left
     When I press "Rutinas"
     And I press "NuevaRutina"
-    And I press view wiht id "hour"
+    And I press the "button2" button
     And I press image button number 5
     And I press the "Add" button
     And I press "9"
@@ -29,7 +29,7 @@ Feature: Routines
     And I press "5"
     And I press "PM"
     And I press "ACEPTAR"
-    And I press "Add" button
+    And I press "add_button" button
     Then I should see "21:25"
 
     
